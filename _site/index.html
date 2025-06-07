@@ -1,77 +1,326 @@
+
 <!DOCTYPE html>
-<html lang="en"><head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Your awesome title | Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</title>
-<meta name="generator" content="Jekyll v3.10.0" />
-<meta property="og:title" content="Your awesome title" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<link rel="canonical" href="http://localhost:4000/cristiano.silva.github.io/" />
-<meta property="og:url" content="http://localhost:4000/cristiano.silva.github.io/" />
-<meta property="og:site_name" content="Your awesome title" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Your awesome title" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","headline":"Your awesome title","name":"Your awesome title","url":"http://localhost:4000/cristiano.silva.github.io/"}</script>
-<!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/cristiano.silva.github.io/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/cristiano.silva.github.io/feed.xml" title="Your awesome title" /></head>
-<body><header class="site-header" role="banner">
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristiano Silva - Técnico de Automação Industrial | Portfólio</title>
+    <meta name="description" content="Portfólio profissional de Cristiano Silva, técnico de automação especializado em sistemas industriais, SIMATIC PCS7, WinCC e controle de processos.">
+    <meta name="author" content="Cristiano Silva">
+    <meta name="keywords" content="automação industrial, técnico automação, SIMATIC, PCS7, WinCC, CLP, controle processos, marabá, portfolio">
+    
+    <meta property="og:title" content="Cristiano Silva - Técnico de Automação Industrial | Portfólio">
+    <meta property="og:description" content="Portfólio profissional de Cristiano Silva, técnico de automação especializado em sistemas industriais, SIMATIC PCS7, WinCC e controle de processos.">
+    <meta property="og:type" content="website">
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<script>
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-link");
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/cristiano.silva.github.io/">Your awesome title</a><nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
+    function updateActiveLink() {
+        let scrollPos = window.scrollY + window.innerHeight / 2;
 
-        <div class="trigger"><a class="page-link" href="/cristiano.silva.github.io/about/">About</a></div>
-      </nav></div>
-</header>
-<main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <div class="home">
-<h2 class="post-list-heading">Posts</h2>
-    <ul class="post-list"><li><span class="post-meta">Jun 7, 2025</span>
-        <h3>
-          <a class="post-link" href="/cristiano.silva.github.io/jekyll/update/2025/06/07/welcome-to-jekyll.html">
-            Welcome to Jekyll!
-          </a>
-        </h3></li></ul>
+        sections.forEach(section => {
+            const top = section.offsetTop;
+            const height = section.offsetHeight;
+            const id = section.getAttribute("id");
 
-    <p class="rss-subscribe">subscribe <a href="/cristiano.silva.github.io/feed.xml">via RSS</a></p></div>
+            if (scrollPos >= top && scrollPos < top + height) {
+                navLinks.forEach(link => {
+                    link.classList.remove("active");
+                    if (link.getAttribute("href") === "#" + id) {
+                        link.classList.add("active");
+                    }
+                });
+            }
+        });
+    }
 
-      </div>
-    </main><footer class="site-footer h-card">
-  <data class="u-url" href="/cristiano.silva.github.io/"></data>
+    window.addEventListener("scroll", updateActiveLink);
+    window.addEventListener("load", updateActiveLink);
+</script>
 
-  <div class="wrapper">
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-title">Cristiano Silva</h1>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Início</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#experience" class="nav-link">Experiência</a>
+                <a href="#education" class="nav-link">Formação</a>
+                <a href="#projects" class="nav-link">Projetos</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-    <h2 class="footer-heading">Your awesome title</h2>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQELCC7DyD9trA/profile-displayphoto-shrink_200_200/B4DZaRg.d2GcAY-/0/1746198064396?e=1754524800&v=beta&t=eTXiPo9c5Ke49sgTzHi45Mpks--26eYX5EdjSdX4zZ8" alt="Cristiano Silva" class="profile-img">
+                </div>
+                <h1 class="hero-title">Cristiano Silva</h1>
+                <p class="hero-subtitle">Técnico em Automação Industrial | Desenvolvedor de Lógicas com IO-Link | Especialista em Redes Industriais, CLPs e Interfaces Homem-Máquina (IHM)</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                    <a href="#contact" class="btn btn-outline">Entrar em Contato</a>
+                </div>
+                <div class="scroll-indicator">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6,9 12,15 18,9"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">Your awesome title</li><li><a class="u-email" href="mailto:your-email@example.com">your-email@example.com</a></li></ul>
-      </div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Técnico em Automação Industrial com 5 anos de experiência, sendo 3 deles dedicados à área de automação. Especializado em automação e controle de processos, atualmente cursando Engenharia de Controle e Automação, com foco no desenvolvimento e implementação de soluções inovadoras. Tenho sólida atuação em manutenção e desenvolvimento de sistemas automatizados, com domínio das linguagens Node-RED, Lua e JavaScript. Experiência com protocolos industriais como Profinet, Profibus DP/PA, Intercat e Ethernet IP. </p>
+                    <p>Atuo com redes industriais, sensores (indutivos, capacitivos, ópticos e a laser) e comunicação via IO-Link. Desenvolvo lógicas em CFC e projetos com WinCC, além de configurar inversores das marcas Weg, Siemens (G120, 120), Gefran (ADV200) e ABB (ACS800/880). Crio interfaces no AVEVA System Platform e em Node-RED com integração via OPC UA para geração de relatórios gerenciais. Comprometido com a eficiência operacional, segurança e melhoria contínua dos processos industriais.</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Marabá, Pará - Brasil</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            <span>(94) 981667301</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>cv.lacerdaa@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-skills">
+                    <h3>Principais Competências</h3>
+                    <div class="skills-grid">
+                        <span class="skill-tag">Automação Industrial</span>
+                        <span class="skill-tag">Node-RED</span>
+                        <span class="skill-tag">SIMATIC PCS7</span>
+                        <span class="skill-tag">SIMATIC WinCC</span>
+                        <span class="skill-tag">CLP/PLC</span>
+                        <span class="skill-tag">Profinet</span>
+                        <span class="skill-tag">Profibus</span>
+                        <span class="skill-tag">Intercat</span>
+                        <span class="skill-tag">Instrumentação</span>
+                        <span class="skill-tag">Sistemas Pneumáticos</span>
+                        <span class="skill-tag">Sistemas Hidráulicos</span>
+                        <span class="skill-tag">CFC</span>
+                        <span class="skill-tag">SFC</span>
+                        <span class="skill-tag">LAD</span>
+                        <span class="skill-tag">Análise de Falhas</span>
+                        <span class="skill-tag">RCA</span>
+                        <span class="skill-tag">OPC UA</span>
+                        <span class="skill-tag">Programação C++</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Lua</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">Eletrotécnica</span>
+                        <span class="skill-tag">Mecatrônica</span>
+                    </div>
+                    
+                    <div class="languages">
+                        <h3>Idiomas</h3>
+                        <div class="language-item">
+                            <span>Português</span>
+                            <span class="language-level">Nativo</span>
+                        </div>
+                        <div class="language-item">
+                            <span>Inglês</span>
+                            <span class="language-level">Básico</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/jekyll"><svg class="svg-icon"><use xlink:href="/cristiano.silva.github.io/assets/minima-social-icons.svg#github"></use></svg> <span class="username">jekyll</span></a></li><li><a href="https://www.twitter.com/jekyllrb"><svg class="svg-icon"><use xlink:href="/cristiano.silva.github.io/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">jekyllrb</span></a></li></ul>
-</div>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experiência Profissional</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Técnico de Automação</h3>
+                        <h4>SINOBRAS SIDERÚRGICA NORTE BRASIL S.A</h4>
+                        <p class="location">Marabá, Pará</p>
+                        <span class="period">10/2022 - Atual</span>
+                        <p class="description">Responsável por projetar, implementar e manter sistemas de automação industrial e controle de processo. Automação e controle de processos, desenvolvimento e implementação de soluções de automação utilizando CLP sensors, sistemas pneumáticos e hidráulicos, inversores e drivers.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Eletricista de Manutenção Eletroeletrônica</h3>
+                        <h4>SINOBRAS SIDERÚRGICA NORTE BRASIL S.A</h4>
+                        <p class="location">Marabá, Pará</p>
+                        <span class="period">08/2019 - 10/2022</span>
+                        <p class="description">Execução de manutenções preventivas e corretivas em sistemas, garantindo a eficiência e continuidade das operações. Realização de relatórios detalhados e implementação de melhorias contínuas nos equipamentos.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Estagiário em Mecatrônica</h3>
+                        <h4>SINOBRAS SIDERÚRGICA NORTE BRASIL S.A</h4>
+                        <p class="location">Marabá, Pará</p>
+                        <span class="period">10/2018 - 08/2019</span>
+                        <p class="description">Atuação com apoio em projetos de automação e integração de sistemas mecânicos, elétricos e de controle. Apoio técnico na execução de manutenções preventivas e corretivas em sistemas e equipamentos mecatrônicos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <div class="footer-col footer-col-3">
-        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</p>
-      </div>
-    </div>
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Formação e Certificações</h2>
+            <div class="education-grid">
+                <div class="education-item">
+                    <h3>Bacharelado em Engenharia de Controle e Automação</h3>
+                    <h4>UNIFATECIE</h4>
+                    <span class="period">11/2022 - 11/2027</span>
+                    <span class="status cursando">Cursando</span>
+                    <p>Análise e controle de sistemas dinâmicos, Projeto e implementação de sistemas de automação, Programação e integração de sistemas industriais.</p>
+                </div>
+                
+                <div class="education-item">
+                    <h3>SIMATIC PCS 7</h3>
+                    <h4>Siemens</h4>
+                    <span class="period">01/2024</span>
+                    <span class="status concluido">Concluído</span>
+                    <p>Curso intensivo sobre Sistema de automação SIMATIC PCS 7. Arquitetura avançada do sistema PCS 7, Configuração e integração de hardware e software.</p>
+                </div>
+                
+                <div class="education-item">
+                    <h3>SIMATIC WinCC Unified</h3>
+                    <h4>Siemens</h4>
+                    <span class="period">01/2023</span>
+                    <span class="status concluido">Concluído</span>
+                    <p>Configuração e operação do SIMATIC WinCC Unified. Desenvolvimento de interfaces homem-máquina intuitivas com Unified Comfort Panels.</p>
+                </div>
+                
+                <div class="education-item">
+                    <h3>Automação Industrial</h3>
+                    <h4>PRIMER CURSOS</h4>
+                    <span class="period">01/2020</span>
+                    <span class="status concluido">Concluído</span>
+                    <p>Conceitos básicos e avançados de automação industrial. Controladores Lógicos Programáveis (CLP) e suas aplicações.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  </div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projetos em Destaque</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Sistema de Automação Industrial</h3>
+                    <p>Implementação de sistemas de automação utilizando CLP sensors, sistemas pneumáticos e hidráulicos, inversores e drivers.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">SIMATIC PCS7</span>
+                        <span class="tech-tag">CLP</span>
+                        <span class="tech-tag">Profinet</span>
+                        <span class="tech-tag">WinCC</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Integração de Dispositivos IoT</h3>
+                    <p>Programação e integração utilizando linguagem CFC, LAD, SFC e softwares de supervisão, WinCC, INTOUCH para integrar dispositivos.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Node-RED</span>
+                        <span class="tech-tag">OPC UA</span>
+                        <span class="tech-tag">IoT</span>
+                        <span class="tech-tag">INTOUCH</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Sistema de Controle de Processos</h3>
+                    <p>Desenvolvimento de lógicas de controle para comunicação via IO-Link, otimizando a eficiência e precisão dos sistemas de automação.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">IO-Link</span>
+                        <span class="tech-tag">SIMATIC</span>
+                        <span class="tech-tag">Automação</span>
+                        <span class="tech-tag">C++</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</footer>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Vamos Trabalhar Juntos?</h2>
+            <p class="contact-subtitle">Estou sempre aberto a novas oportunidades e projetos desafiadores na área de automação industrial. Entre em contato e vamos conversar!</p>
+            <div class="contact-buttons">
+                <a href="mailto:cv.lacerdaa@gmail.com" class="btn btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    Email
+                </a>
+                <a href="https://www.linkedin.com/in/cristiano-silva-830047188/" target="_blank" class="btn btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                    LinkedIn
+                </a>
+                <a href="tel:+5594981667301" class="btn btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    Telefone
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Cristiano Silva. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
