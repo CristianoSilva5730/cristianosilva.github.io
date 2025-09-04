@@ -1,0 +1,14 @@
+title: "Cristiano Vieira Silva — Técnico de Automação Industrial"
+description: "Portfólio com IO-Link, Profinet/Profibus, CLPs Siemens, WinCC/AVEVA, OPC UA, Node-RED e SQL Server."
+
+# Se ESTE repositório for o site de usuário (nome exato: SEU_USUARIO.github.io), deixe baseurl vazio:
+baseurl: ""                     # "" para site de usuário
+url: "https://SEU_USUARIO.github.io"
+
+# Diga ao plugin github-metadata qual é o repo (owner/repo):
+repository: SEU_USUARIO/cristianosilva.github.io
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
