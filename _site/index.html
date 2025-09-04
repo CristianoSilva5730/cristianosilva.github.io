@@ -1,350 +1,387 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cristiano Silva - Técnico de Automação Industrial | Portfólio</title>
-    <meta name="description" content="Portfólio profissional de Cristiano Silva, técnico de automação especializado em sistemas industriais, SIMATIC PCS7, WinCC e controle de processos.">
-    <meta name="author" content="Cristiano Silva">
-    <meta name="keywords" content="automação industrial, técnico automação, SIMATIC, PCS7, WinCC, CLP, controle processos, marabá, portfolio">
-    
-    <meta property="og:title" content="Cristiano Silva - Técnico de Automação Industrial | Portfólio">
-    <meta property="og:description" content="Portfólio profissional de Cristiano Silva, técnico de automação especializado em sistemas industriais, SIMATIC PCS7, WinCC e controle de processos.">
-    <meta property="og:type" content="website">
-    
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cristiano Silva — Técnico de Automação Industrial | Portfólio</title>
+
+  <!-- SEO básico -->
+  <meta name="description" content="Portfólio de Cristiano Silva — Técnico de Automação Industrial. Especialista em IO-Link, redes industriais (Profinet/Profibus), CLPs Siemens, WinCC/AVEVA, Node-RED, OPC UA e SQL Server.">
+  <meta name="author" content="Cristiano Silva" />
+  <meta name="keywords" content="automação industrial, técnico automação, IO-Link, Profinet, Profibus, WinCC, AVEVA, OPC UA, CLP, Siemens, Marabá, portfólio" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Cristiano Silva — Técnico de Automação Industrial | Portfólio">
+  <meta property="og:description" content="Especialista em IO-Link, redes industriais, CLPs e IHMs. Projetos com WinCC/AVEVA, Node-RED, OPC UA e SQL Server.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://cdn.discordapp.com/attachments/1077062672828354691/1413270420261437630/e3ca8dea-e645-470f-9436-0dd0cf49f601.jpg" />
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Estrutura de dados (SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Cristiano Vieira Silva",
+    "jobTitle":"Técnico de Automação Industrial",
+    "address":{"@type":"PostalAddress","addressLocality":"Marabá","addressRegion":"PA","addressCountry":"BR"},
+    "email":"mailto:cv.lacerdaa@gmail.com",
+    "telephone":"+55 94 98166-7301",
+    "url":"https://SEU_USUARIO.github.io",
+    "sameAs":[
+      "https://www.linkedin.com/in/cristiano-silva-830047188/",
+      "https://github.com/SEU_USUARIO"
+    ],
+    "knowsAbout":[
+      "IO-Link","Profinet","Profibus","OPC UA","WinCC","AVEVA System Platform",
+      "Node-RED","SQL Server","CFC","LAD","SFC","Sinamics G120","Weg","Gefran ADV200","ABB ACS800/880"
+    ]
+  }
+  </script>
 </head>
-<script>
+
+<body>
+  <!-- Navegação -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <h1 class="nav-title">Cristiano Silva</h1>
+      <div class="nav-menu">
+        <a href="#home" class="nav-link">Início</a>
+        <a href="#about" class="nav-link">Sobre</a>
+        <a href="#experience" class="nav-link">Experiência</a>
+        <a href="#education" class="nav-link">Formação</a>
+        <a href="#projects" class="nav-link">Projetos</a>
+        <a href="#contact" class="nav-link">Contato</a>
+      </div>
+      <div class="hamburger" aria-label="Abrir menu" aria-expanded="false" role="button" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-image">
+          <img src="https://cdn.discordapp.com/attachments/1077062672828354691/1413270420261437630/e3ca8dea-e645-470f-9436-0dd0cf49f601.jpg" alt="Cristiano Silva" class="profile-img" />
+        </div>
+        <h1 class="hero-title">Cristiano Silva</h1>
+        <p class="hero-subtitle">
+          Técnico em Automação Industrial | IO-Link & Redes Industriais | CLPs, IHMs e Integração OPC UA
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+          <a href="#contact" class="btn btn-outline">Entrar em Contato</a>
+          <a href="https://github.com/SEU_USUARIO" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+          <!-- Troque o link abaixo pelo seu PDF -->
+          <a href="curriculo_cristiano_silva.pdf" class="btn btn-outline">Baixar CV</a>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6,9 12,15 18,9"></polyline>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">Sobre Mim</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Técnico em Automação Industrial com 5+ anos na SINOBRAS (3+ focados diretamente em automação). Atualmente
+            cursando Engenharia de Controle e Automação. Atuo no <strong>desenvolvimento, implantação e manutenção</strong> de sistemas
+            automatizados, com experiência prática em <strong>IO-Link</strong>, redes <strong>Profinet / Profibus DP/PA / Ethernet-IP / Intercat</strong>,
+            e integração de sensores <strong>indutivos, capacitivos, ópticos e a laser</strong>.
+          </p>
+          <p>
+            Desenvolvo lógicas em <strong>CFC/LAD/SFC</strong>, projetos de supervisão com <strong>SIMATIC WinCC</strong> e <strong>AVEVA System Platform</strong>,
+            crio <strong>dashboards Node-RED</strong> e integrações via <strong>OPC UA</strong> para relatórios gerenciais. Vivência com
+            <strong>inversores/drives</strong> (Siemens <em>Sinamics G120</em>, Weg, Gefran <em>ADV200</em>, ABB <em>ACS800/880</em>) e
+            <strong>SQL Server</strong> (coleta, tratamento e análise). Busco sempre eficiência operacional, disponibilidade e segurança.
+          </p>
+
+          <div class="contact-info">
+            <div class="contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Marabá, Pará — Brasil</span>
+            </div>
+            <div class="contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>(94) 98166-7301</span>
+            </div>
+            <div class="contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>cv.lacerdaa@gmail.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-skills">
+          <h3>Principais Competências</h3>
+          <div class="skills-grid">
+            <span class="skill-tag">IO-Link</span>
+            <span class="skill-tag">Profinet</span>
+            <span class="skill-tag">Profibus DP/PA</span>
+            <span class="skill-tag">OPC UA</span>
+            <span class="skill-tag">SIMATIC WinCC / Unified</span>
+            <span class="skill-tag">AVEVA System Platform</span>
+            <span class="skill-tag">CLP/PLC (Siemens)</span>
+            <span class="skill-tag">CFC · LAD · SFC</span>
+            <span class="skill-tag">Node-RED</span>
+            <span class="skill-tag">SQL Server</span>
+            <span class="skill-tag">Instrumentação</span>
+            <span class="skill-tag">Sist. Pneumáticos & Hidráulicos</span>
+            <span class="skill-tag">RCA · Análise de Falhas</span>
+            <span class="skill-tag">HTML · Lua · JS</span>
+          </div>
+
+          <div class="languages">
+            <h3>Idiomas</h3>
+            <div class="language-item"><span>Português</span><span class="language-level">Nativo</span></div>
+            <div class="language-item"><span>Inglês</span><span class="language-level">Básico</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiência -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2 class="section-title">Experiência Profissional</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Técnico de Automação</h3>
+            <h4>SINOBRAS — Siderúrgica Norte Brasil S.A.</h4>
+            <p class="location">Marabá, PA</p>
+            <span class="period">10/2022 — Atual</span>
+            <p class="description">
+              • Desenvolvimento de lógicas (CFC/LAD/SFC) e integração de sensores via <strong>IO-Link</strong>.<br>
+              • Supervisão e IHMs com <strong>WinCC/AVEVA</strong>; criação de dashboards <strong>Node-RED</strong> e integração <strong>OPC UA</strong> para relatórios gerenciais.<br>
+              • Configuração e comissionamento de <strong>inversores/drives</strong> (Siemens G120, Weg, Gefran ADV200, ABB ACS800/880).<br>
+              • Redes <strong>Profinet/Profibus</strong>, instrumentação e análise de falhas com foco em disponibilidade e segurança.<br>
+              • Coleta e consolidação de dados em <strong>SQL Server</strong> para indicadores e automações de reporte.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Eletricista de Manutenção Eletroeletrônica</h3>
+            <h4>SINOBRAS — Siderúrgica Norte Brasil S.A.</h4>
+            <p class="location">Marabá, PA</p>
+            <span class="period">08/2019 — 10/2022</span>
+            <p class="description">
+              Manutenções preventivas e corretivas, melhoria contínua de equipamentos, confiabilidade e suporte a automação de processo.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Estagiário em Mecatrônica</h3>
+            <h4>SINOBRAS — Siderúrgica Norte Brasil S.A.</h4>
+            <p class="location">Marabá, PA</p>
+            <span class="period">10/2018 — 08/2019</span>
+            <p class="description">
+              Apoio a projetos de automação e integração eletromecânica; manutenção de sistemas mecatrônicos.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Formação -->
+  <section id="education" class="education">
+    <div class="container">
+      <h2 class="section-title">Formação e Certificações</h2>
+      <div class="education-grid">
+
+        <div class="education-item">
+          <h3>Bacharelado em Engenharia de Controle e Automação</h3>
+          <h4>UNIFATECIE</h4>
+          <span class="period">11/2022 — 11/2027</span>
+          <span class="status cursando">Cursando</span>
+          <p>Automação, controle de sistemas dinâmicos, integração e projetos industriais.</p>
+        </div>
+
+        <div class="education-item">
+          <h3>SIMATIC PCS 7</h3>
+          <h4>Siemens</h4>
+          <span class="period">01/2024</span>
+          <span class="status concluido">Concluído</span>
+          <p>Arquitetura, configuração e integração de hardware/software no ecossistema PCS 7.</p>
+        </div>
+
+        <div class="education-item">
+          <h3>SIMATIC WinCC Unified</h3>
+          <h4>Siemens</h4>
+          <span class="period">01/2023</span>
+          <span class="status concluido">Concluído</span>
+          <p>Desenvolvimento de IHMs e painéis Unified com foco em usabilidade e desempenho.</p>
+        </div>
+
+        <div class="education-item">
+          <h3>Automação Industrial</h3>
+          <h4>Primer Cursos</h4>
+          <span class="period">01/2020</span>
+          <span class="status concluido">Concluído</span>
+          <p>Fundamentos e prática com CLPs, instrumentação e redes industriais.</p>
+        </div>
+
+        <div class="education-item">
+          <h3>Técnico em Mecatrônica</h3>
+          <h4>UNOPAR</h4>
+          <span class="period">2019</span>
+          <span class="status concluido">Concluído</span>
+          <p>Integração eletromecânica, robótica, programação de CLP e manutenção.</p>
+        </div>
+
+        <div class="education-item">
+          <h3>Técnico em Eletrotécnica</h3>
+          <h4>UNOPAR</h4>
+          <span class="period">2018</span>
+          <span class="status concluido">Concluído</span>
+          <p>Instalações, comandos elétricos, máquinas e normas técnicas de segurança.</p>
+        </div>
+
+        <div class="education-item">
+          <h3>Redes GPON (Gigabit Passive Optical Network)</h3>
+          <h4>Intelbras</h4>
+          <span class="period">2017</span>
+          <span class="status concluido">Concluído</span>
+          <p>Arquitetura FTTH, configuração de OLT/ONU, testes e boas práticas de implantação.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Projetos em Destaque</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <h3>Integração OPC UA + Dashboards Node-RED</h3>
+          <p>Coleta e exposição de variáveis de processo via OPC UA com camadas de visualização em Node-RED para KPIs e relatórios gerenciais.</p>
+          <div class="project-tech">
+            <span class="tech-tag">OPC UA</span>
+            <span class="tech-tag">Node-RED</span>
+            <span class="tech-tag">SQL Server</span>
+            <span class="tech-tag">WinCC/AVEVA</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Comunicação com Sensores via IO-Link</h3>
+          <p>Desenvolvimento de lógicas de controle e diagnóstico avançado de sensores, aumentando precisão e disponibilidade do sistema.</p>
+          <div class="project-tech">
+            <span class="tech-tag">IO-Link</span>
+            <span class="tech-tag">CFC/LAD</span>
+            <span class="tech-tag">Siemens</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Supervisão & IHMs — WinCC / AVEVA</h3>
+          <p>Criação de telas operacionais e relatórios; padronização visual e melhoria da usabilidade para operação e manutenção.</p>
+          <div class="project-tech">
+            <span class="tech-tag">WinCC</span>
+            <span class="tech-tag">AVEVA</span>
+            <span class="tech-tag">UX para IHM</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Vamos Trabalhar Juntos?</h2>
+      <p class="contact-subtitle">
+        Aberto a oportunidades e projetos desafiadores em Automação Industrial. Fale comigo:
+      </p>
+      <div class="contact-buttons">
+        <a href="mailto:cv.lacerdaa@gmail.com" class="btn btn-primary" aria-label="Enviar email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          Email
+        </a>
+        <a href="https://www.linkedin.com/in/cristiano-silva-830047188/" target="_blank" rel="noopener" class="btn btn-primary" aria-label="Abrir LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/SEU_USUARIO" target="_blank" rel="noopener" class="btn btn-primary" aria-label="Abrir GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.31 6.84 9.66.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.45-1.16-1.1-1.47-1.1-1.47-.9-.63.07-.62.07-.62 1 .07 1.52 1.06 1.52 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.09 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.33 9.33 0 0 1 12 7.06c.85 0 1.7.12 2.5.35 1.9-1.32 2.74-1.05 2.74-1.05.56 1.41.21 2.45.11 2.71.64.73 1.03 1.65 1.03 2.76 0 3.96-2.34 4.83-4.57 5.08.36.32.68.93.68 1.88 0 1.36-.01 2.45-.01 2.78 0 .27.18.58.69.48A10.07 10.07 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"></path></svg>
+          GitHub
+        </a>
+        <a href="tel:+5594981667301" class="btn btn-primary" aria-label="Ligar para telefone">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          Telefone
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Cristiano Silva. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts (colocados no fim para evitar bloqueio) -->
+  <script>
+    // Animação de link ativo no menu
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll(".nav-link");
 
     function updateActiveLink() {
-        let scrollPos = window.scrollY + window.innerHeight / 2;
-
-        sections.forEach(section => {
-            const top = section.offsetTop;
-            const height = section.offsetHeight;
-            const id = section.getAttribute("id");
-
-            if (scrollPos >= top && scrollPos < top + height) {
-                navLinks.forEach(link => {
-                    link.classList.remove("active");
-                    if (link.getAttribute("href") === "#" + id) {
-                        link.classList.add("active");
-                    }
-                });
-            }
-        });
+      const scrollPos = window.scrollY + window.innerHeight / 2;
+      sections.forEach(section => {
+        const top = section.offsetTop;
+        const height = section.offsetHeight;
+        const id = section.getAttribute("id");
+        if (scrollPos >= top && scrollPos < top + height) {
+          navLinks.forEach(link => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === "#" + id) link.classList.add("active");
+          });
+        }
+      });
     }
-
     window.addEventListener("scroll", updateActiveLink);
     window.addEventListener("load", updateActiveLink);
-</script>
 
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <h1 class="nav-title">Cristiano Silva</h1>
-            <div class="nav-menu">
-                <a href="#home" class="nav-link">Início</a>
-                <a href="#about" class="nav-link">Sobre</a>
-                <a href="#experience" class="nav-link">Experiência</a>
-                <a href="#education" class="nav-link">Formação</a>
-                <a href="#projects" class="nav-link">Projetos</a>
-                <a href="#contact" class="nav-link">Contato</a>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-image">
-                    <img src="https://cdn.discordapp.com/attachments/1077062672828354691/1413270420261437630/e3ca8dea-e645-470f-9436-0dd0cf49f601.jpg?ex=68bb5225&is=68ba00a5&hm=98bd6ca0d8daeb944075f35a5072401ff9ee9028d5640b865ba0210f2833eb92&" alt="Cristiano Silva" class="profile-img">
-                </div>
-                <h1 class="hero-title">Cristiano Silva</h1>
-                <p class="hero-subtitle">Técnico em Automação Industrial | Desenvolvedor de Lógicas com IO-Link | Especialista em Redes Industriais, CLPs e Interfaces Homem-Máquina (IHM)</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">Ver Projetos</a>
-                    <a href="#contact" class="btn btn-outline">Entrar em Contato</a>
-                </div>
-                <div class="scroll-indicator">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="6,9 12,15 18,9"></polyline>
-                    </svg>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">Sobre Mim</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>Técnico em Automação Industrial com 5 anos de experiência, sendo 3 deles dedicados à área de automação. Especializado em automação e controle de processos, atualmente cursando Engenharia de Controle e Automação, com foco no desenvolvimento e implementação de soluções inovadoras. Tenho sólida atuação em manutenção e desenvolvimento de sistemas automatizados, com domínio das linguagens Node-RED, Lua e JavaScript. Experiência com protocolos industriais como Profinet, Profibus DP/PA, Intercat e Ethernet IP. </p>
-                    <p>Atuo com redes industriais, sensores (indutivos, capacitivos, ópticos e a laser) e comunicação via IO-Link. Desenvolvo lógicas em CFC e projetos com WinCC, além de configurar inversores das marcas Weg, Siemens (G120, 120), Gefran (ADV200) e ABB (ACS800/880). Crio interfaces no AVEVA System Platform e em Node-RED com integração via OPC UA para geração de relatórios gerenciais. Comprometido com a eficiência operacional, segurança e melhoria contínua dos processos industriais.</p>
-                    
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                <circle cx="12" cy="10" r="3"></circle>
-                            </svg>
-                            <span>Marabá, Pará - Brasil</span>
-                        </div>
-                        <div class="contact-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                            </svg>
-                            <span>(94) 981667301</span>
-                        </div>
-                        <div class="contact-item">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
-                            <span>cv.lacerdaa@gmail.com</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="about-skills">
-                    <h3>Principais Competências</h3>
-                    <div class="skills-grid">
-                        <span class="skill-tag">Automação Industrial</span>
-                        <span class="skill-tag">Node-RED</span>
-                        <span class="skill-tag">SIMATIC PCS7</span>
-                        <span class="skill-tag">SIMATIC WinCC</span>
-                        <span class="skill-tag">CLP/PLC</span>
-                        <span class="skill-tag">Profinet</span>
-                        <span class="skill-tag">Profibus</span>
-                        <span class="skill-tag">Intercat</span>
-                        <span class="skill-tag">Instrumentação</span>
-                        <span class="skill-tag">Sistemas Pneumáticos</span>
-                        <span class="skill-tag">Sistemas Hidráulicos</span>
-                        <span class="skill-tag">CFC</span>
-                        <span class="skill-tag">SFC</span>
-                        <span class="skill-tag">LAD</span>
-                        <span class="skill-tag">Análise de Falhas</span>
-                        <span class="skill-tag">RCA</span>
-                        <span class="skill-tag">OPC UA</span>
-                        <span class="skill-tag">Programação C++</span>
-                        <span class="skill-tag">C#</span>
-                        <span class="skill-tag">Lua</span>
-                        <span class="skill-tag">HTML</span>
-                        <span class="skill-tag">Eletrotécnica</span>
-                        <span class="skill-tag">Mecatrônica</span>
-                    </div>
-                    
-                    <div class="languages">
-                        <h3>Idiomas</h3>
-                        <div class="language-item">
-                            <span>Português</span>
-                            <span class="language-level">Nativo</span>
-                        </div>
-                        <div class="language-item">
-                            <span>Inglês</span>
-                            <span class="language-level">Básico</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Experiência Profissional</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Técnico de Automação</h3>
-                        <h4>SINOBRAS SIDERÚRGICA NORTE BRASIL S.A</h4>
-                        <p class="location">Marabá, Pará</p>
-                        <span class="period">10/2022 - Atual</span>
-                        <p class="description">Responsável por projetar, implementar e manter sistemas de automação industrial e controle de processo. Automação e controle de processos, desenvolvimento e implementação de soluções de automação utilizando CLP sensors, sistemas pneumáticos e hidráulicos, inversores e drivers.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Eletricista de Manutenção Eletroeletrônica</h3>
-                        <h4>SINOBRAS SIDERÚRGICA NORTE BRASIL S.A</h4>
-                        <p class="location">Marabá, Pará</p>
-                        <span class="period">08/2019 - 10/2022</span>
-                        <p class="description">Execução de manutenções preventivas e corretivas em sistemas, garantindo a eficiência e continuidade das operações. Realização de relatórios detalhados e implementação de melhorias contínuas nos equipamentos.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Estagiário em Mecatrônica</h3>
-                        <h4>SINOBRAS SIDERÚRGICA NORTE BRASIL S.A</h4>
-                        <p class="location">Marabá, Pará</p>
-                        <span class="period">10/2018 - 08/2019</span>
-                        <p class="description">Atuação com apoio em projetos de automação e integração de sistemas mecânicos, elétricos e de controle. Apoio técnico na execução de manutenções preventivas e corretivas em sistemas e equipamentos mecatrônicos.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <div class="container">
-            <h2 class="section-title">Formação e Certificações</h2>
-            <div class="education-grid">
-                <div class="education-item">
-                    <h3>Bacharelado em Engenharia de Controle e Automação</h3>
-                    <h4>UNIFATECIE</h4>
-                    <span class="period">11/2022 - 11/2027</span>
-                    <span class="status cursando">Cursando</span>
-                    <p>Análise e controle de sistemas dinâmicos, Projeto e implementação de sistemas de automação, Programação e integração de sistemas industriais.</p>
-                </div>
-                
-                <div class="education-item">
-                    <h3>SIMATIC PCS 7</h3>
-                    <h4>Siemens</h4>
-                    <span class="period">01/2024</span>
-                    <span class="status concluido">Concluído</span>
-                    <p>Curso intensivo sobre Sistema de automação SIMATIC PCS 7. Arquitetura avançada do sistema PCS 7, Configuração e integração de hardware e software.</p>
-                </div>
-                
-                <div class="education-item">
-                    <h3>SIMATIC WinCC Unified</h3>
-                    <h4>Siemens</h4>
-                    <span class="period">01/2023</span>
-                    <span class="status concluido">Concluído</span>
-                    <p>Configuração e operação do SIMATIC WinCC Unified. Desenvolvimento de interfaces homem-máquina intuitivas com Unified Comfort Panels.</p>
-                </div>
-                
-                <div class="education-item">
-                    <h3>Automação Industrial</h3>
-                    <h4>PRIMER CURSOS</h4>
-                    <span class="period">01/2020</span>
-                    <span class="status concluido">Concluído</span>
-                    <p>Conceitos básicos e avançados de automação industrial. Controladores Lógicos Programáveis (CLP) e suas aplicações.</p>
-                </div>
-
-                <div class="education-item">
-                    <h3>Formação técnica em Mecatrônica</h3>
-                    <h4>UNOPAR</h4>
-                    <span class="period">2019</span>
-                    <span class="status concluido">Concluído</span>
-                    <p>Ênfase em sistemas integrados de automação e controle; Princípios de eletrônica, mecânica e informática aplicados à automação; Projeto e manutenção de sistemas mecatrônicos e robóticos; Programação e configuração de Controladores Lógicos Programáveis (CLP); Desenvolvimento de sistemas de controle e automação industrial; Integração de sensores e atuadores em sistemas automatizados; Diagnóstico e solução de problemas em sistemas mecatrônicos; Práticas laboratoriais e projetos de aplicação prática</p>
-                </div>
-
-                <div class="education-item">
-                    <h3>Formação tecnica em Eletrotécnica</h3>
-                    <h4>UNOPAR</h4>
-                    <span class="period">2018</span>
-                    <span class="status concluido">Concluído</span>
-                    <p>Formação técnica voltada para o planejamento, instalação, operação e manutenção de sistemas elétricos em baixa e média tensão. Abrange conhecimentos em comandos elétricos, instalações prediais e industriais, máquinas elétricas, eletrônica básica, leitura e interpretação de diagramas elétricos, além da aplicação de normas técnicas e de segurança.</p>
-                </div>
-
-                <div class="education-item">
-                    <h3>Certificação especializada em redes GPON (Gigabit Passive Optical Network)</h3>
-                    <h4>INTELBRAS</h4>
-                    <span class="period">2017</span>
-                    <span class="status concluido">Concluído</span>
-                    <p>Capacitação técnica focada na arquitetura e operação de redes ópticas passivas do tipo GPON. Abrange conceitos de transmissão FTTH, topologias ponto-multiponto, configuração de OLTs e ONUs, splitters ópticos, padrões ITU-T G.984 e G.988, testes com OTDR, fusão de fibras, e boas práticas de implantação e manutenção. Ênfase em segurança, desempenho de rede e uso de equipamentos e softwares especializados.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Projetos em Destaque</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Sistema de Automação Industrial</h3>
-                    <p>Implementação de sistemas de automação utilizando CLP sensors, sistemas pneumáticos e hidráulicos, inversores e drivers.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">SIMATIC PCS7</span>
-                        <span class="tech-tag">CLP</span>
-                        <span class="tech-tag">Profinet</span>
-                        <span class="tech-tag">WinCC</span>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <h3>Integração de Dispositivos IoT</h3>
-                    <p>Programação e integração utilizando linguagem CFC, LAD, SFC e softwares de supervisão, WinCC, INTOUCH para integrar dispositivos.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Node-RED</span>
-                        <span class="tech-tag">OPC UA</span>
-                        <span class="tech-tag">IoT</span>
-                        <span class="tech-tag">INTOUCH</span>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <h3>Sistema de Controle de Processos</h3>
-                    <p>Desenvolvimento de lógicas de controle para comunicação via IO-Link, otimizando a eficiência e precisão dos sistemas de automação.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">IO-Link</span>
-                        <span class="tech-tag">SIMATIC</span>
-                        <span class="tech-tag">Automação</span>
-                        <span class="tech-tag">C++</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Vamos Trabalhar Juntos?</h2>
-            <p class="contact-subtitle">Estou sempre aberto a novas oportunidades e projetos desafiadores na área de automação industrial. Entre em contato e vamos conversar!</p>
-            <div class="contact-buttons">
-                <a href="mailto:cv.lacerdaa@gmail.com" class="btn btn-primary">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                        <polyline points="22,6 12,13 2,6"></polyline>
-                    </svg>
-                    Email
-                </a>
-                <a href="https://www.linkedin.com/in/cristiano-silva-830047188/" target="_blank" class="btn btn-primary">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                        <rect x="2" y="9" width="4" height="12"></rect>
-                        <circle cx="4" cy="4" r="2"></circle>
-                    </svg>
-                    LinkedIn
-                </a>
-                <a href="tel:+5594981667301" class="btn btn-primary">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                    </svg>
-                    Telefone
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Cristiano Silva. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+    // Menu hambúrguer para mobile
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+    if (hamburger) {
+      hamburger.addEventListener("click", () => {
+        const expanded = hamburger.getAttribute("aria-expanded") === "true" || false;
+        hamburger.setAttribute("aria-expanded", !expanded);
+        navMenu.classList.toggle("open");
+      });
+      hamburger.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") hamburger.click();
+      });
+    }
+  </script>
+  <script src="script.js" defer></script>
 </body>
 </html>
