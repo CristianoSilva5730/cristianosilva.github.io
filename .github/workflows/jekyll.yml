@@ -2,7 +2,7 @@ name: Deploy Jekyll site to Pages
 
 on:
   push:
-    branches: ["master"]   # troque para "main" se mudar o branch padrão
+    branches: ["master"]   # troque para "main" se seu branch padrão for main
   workflow_dispatch:
 
 permissions:
@@ -25,15 +25,18 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
-          bundler-cache: true
-          cache-version: 0
+          bundler-cache: false   # ⚠️ desliga o auto "bundle install"
 
-      # 🔧 Evita erro "bundle only supports x64-mingw-ucrt" quando o lockfile veio do Windows
+      # ✅ Corrige o Gemfile.lock ANTES de instalar
       - name: Ensure linux platform in Gemfile.lock
         run: |
           if [ -f Gemfile.lock ]; then
             bundle lock --add-platform x86_64-linux || true
           fi
+
+      # Agora sim instalamos as gems
+      - name: Bundle install
+        run: bundle install --jobs 4
 
       - name: Setup Pages
         id: pages
@@ -46,7 +49,6 @@ jobs:
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-        # (por padrão envia ./_site)
 
   deploy:
     environment:
